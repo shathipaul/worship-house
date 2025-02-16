@@ -1,0 +1,433 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Header/Navbar styles */
+.header {
+  background: linear-gradient(90deg, #04abe1, #42ccf6);
+  color: white;
+  position: relative;
+}
+
+.header::after {
+  content: "";
+  position: absolute;
+  background-image: url("./assets/decorations/Header-decoration.png");
+  width: 100%;
+  height: 100%;
+  background-repeat: repeat;
+  height: 8px;
+}
+
+.header > div {
+  max-width: 1640px;
+  width: 100%;
+  margin-inline: auto;
+  padding-inline: 32px;
+  padding-block-start: 30px;
+  padding-block-end: 38px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  text-wrap: nowrap;
+}
+
+.brand-logo {
+  width: 415px;
+  height: 40px;
+}
+
+.icon {
+  width: 28px;
+  height: 28px;
+}
+
+.header-first-section {
+  display: flex;
+  align-items: center;
+}
+
+.header-first-section > a {
+  flex: 1 1 0%;
+}
+
+.search-field {
+  max-width: 765px;
+  margin-inline: auto;
+  flex: 1 1 0%;
+}
+
+.search-container {
+  position: relative;
+}
+
+.search-field-icon {
+  position: absolute;
+  inset-block: 0;
+  inset-inline-start: 0;
+  display: flex;
+  align-items: center;
+  padding-inline-start: 24px;
+  pointer-events: none;
+}
+
+.search-field-icon > img {
+  width: 24px;
+  height: 24px;
+  z-index: 1;
+}
+
+.search-field input {
+  display: block;
+  width: 100%;
+  padding: 19px;
+  padding-inline-start: 54px;
+  font-size: 16px;
+  border: none;
+  border-radius: none;
+  clip-path: polygon(
+    98.415% 100%,
+    1.951% 100%,
+    1.951% 100%,
+    1.655% 99.554%,
+    1.379% 98.271%,
+    1.125% 96.239%,
+    0.9% 93.543%,
+    0.706% 90.268%,
+    0.549% 86.5%,
+    0.432% 82.325%,
+    0.36% 77.829%,
+    0.336% 73.096%,
+    0.367% 68.214%,
+    0.959% 16.429%,
+    0.959% 16.429%,
+    1.003% 13.669%,
+    1.069% 11.086%,
+    1.155% 8.706%,
+    1.26% 6.557%,
+    1.38% 4.665%,
+    1.514% 3.057%,
+    1.661% 1.76%,
+    1.818% 0.8%,
+    1.984% 0.204%,
+    2.156% 0%,
+    98.21% 0%,
+    98.21% 0%,
+    98.382% 0.2%,
+    98.548% 0.783%,
+    98.705% 1.726%,
+    98.852% 3.006%,
+    98.987% 4.598%,
+    99.107% 6.48%,
+    99.211% 8.628%,
+    99.297% 11.017%,
+    99.363% 13.625%,
+    99.407% 16.429%,
+    100% 68.214%,
+    100% 68.214%,
+    100.03% 73.096%,
+    100.007% 77.829%,
+    99.935% 82.325%,
+    99.818% 86.5%,
+    99.66% 90.268%,
+    99.467% 93.543%,
+    99.241% 96.239%,
+    98.988% 98.271%,
+    98.711% 99.554%,
+    98.415% 100%
+  );
+}
+
+.search-field :focus {
+  outline: none;
+}
+
+.search-field input::placeholder {
+  color: #40c8f4;
+  font-size: 16px;
+  font-family: inherit;
+  font-weight: 600;
+}
+
+.header-icons-section {
+  flex: 1 1 0%;
+  max-width: 160px;
+  display: flex;
+  justify-content: space-around;
+  padding: 14px 16px;
+  background-color: #ffffff33;
+  clip-path: polygon(
+    100% 31.786%,
+    96.488% 83.571%,
+    96.488% 83.571%,
+    96.227% 86.331%,
+    95.837% 88.914%,
+    95.327% 91.294%,
+    94.71% 93.443%,
+    93.997% 95.335%,
+    93.201% 96.943%,
+    92.331% 98.24%,
+    91.4% 99.2%,
+    90.419% 99.796%,
+    89.4% 100%,
+    12.771% 100%,
+    12.771% 100%,
+    11.752% 99.796%,
+    10.771% 99.2%,
+    9.84% 98.24%,
+    8.971% 96.943%,
+    8.174% 95.335%,
+    7.461% 93.443%,
+    6.844% 91.294%,
+    6.335% 88.914%,
+    5.944% 86.331%,
+    5.683% 83.571%,
+    2.171% 31.786%,
+    2.171% 31.786%,
+    1.993% 26.904%,
+    2.13% 22.171%,
+    2.557% 17.675%,
+    3.25% 13.5%,
+    4.183% 9.732%,
+    5.33% 6.457%,
+    6.666% 3.761%,
+    8.167% 1.729%,
+    9.806% 0.446%,
+    11.558% 0%,
+    90.613% 0%,
+    90.613% 0%,
+    92.366% 0.446%,
+    94.005% 1.729%,
+    95.505% 3.761%,
+    96.841% 6.457%,
+    97.989% 9.732%,
+    98.921% 13.5%,
+    99.614% 17.675%,
+    100.041% 22.171%,
+    100.179% 26.904%,
+    100% 31.786%
+  );
+}
+
+.header-second-section {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.header-nav {
+  display: flex;
+  font-size: 18px;
+  font-weight: 700;
+  column-gap: 0;
+  flex-wrap: wrap;
+}
+
+.header-nav li {
+  padding: 12px;
+}
+
+.worshipMediaButton {
+  font-size: 16px;
+  font-weight: 600;
+  padding: 16px 32px;
+  background-color: #6bd9fd;
+  color: #ffffff;
+  cursor: pointer;
+  border: 0;
+  clip-path: polygon(
+    100% 31.786%,
+    97.914% 83.571%,
+    97.914% 83.571%,
+    97.759% 86.331%,
+    97.527% 88.914%,
+    97.224% 91.294%,
+    96.857% 93.443%,
+    96.434% 95.335%,
+    95.961% 96.943%,
+    95.444% 98.24%,
+    94.891% 99.2%,
+    94.308% 99.796%,
+    93.703% 100%,
+    7.587% 100%,
+    7.587% 100%,
+    6.982% 99.796%,
+    6.399% 99.2%,
+    5.846% 98.24%,
+    5.329% 96.943%,
+    4.856% 95.335%,
+    4.432% 93.443%,
+    4.066% 91.294%,
+    3.763% 88.914%,
+    3.531% 86.331%,
+    3.376% 83.571%,
+    1.29% 31.786%,
+    1.29% 31.786%,
+    1.184% 26.904%,
+    1.265% 22.171%,
+    1.519% 17.675%,
+    1.931% 13.5%,
+    2.485% 9.732%,
+    3.166% 6.457%,
+    3.96% 3.761%,
+    4.852% 1.729%,
+    5.825% 0.446%,
+    6.866% 0%,
+    94.423% 0%,
+    94.423% 0%,
+    95.464% 0.446%,
+    96.438% 1.729%,
+    97.33% 3.761%,
+    98.124% 6.457%,
+    98.805% 9.732%,
+    99.359% 13.5%,
+    99.771% 17.675%,
+    100.025% 22.171%,
+    100.106% 26.904%,
+    100% 31.786%
+  );
+}
+
+/* Banner carousel background */
+.carousel-background {
+  background: url("../assets/background.png");
+  background-color: #fcf2ec;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 50px 0;
+}
+
+/* Banner carousel styles */
+.carousel-container {
+  position: relative;
+  width: 100%;
+  max-width: calc(100% - 200px);
+  margin: auto;
+  overflow: hidden;
+}
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+.carousel img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Banner carousel buttons */
+.navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0px;
+}
+.arrow {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+/* Best seller styles */
+.bestSellerHeading {
+  color: #ec007a;
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.bestSellerTabsContainer {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  white-space: nowrap;
+  align-items: flex-end;
+  justify-content: flex-start;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  margin-bottom: -2px;
+}
+
+.bestSellerTabs {
+  background-color: #f466af;
+  color: #ffffff;
+  transform: scale(1.3);
+  transform-origin: center bottom;
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: #ffcbe4;
+  color: #656565;
+  flex: 0 0 auto;
+  transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55),
+    background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Best Seller Cards */
+.bestSellerCardsContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  background-color: #f466af;
+  padding: 40px;
+}
+
+.bestSellerCards {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #ffffff;
+  max-height: 300px;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: transform 0.4s, box-shadow 0.4s;
+}
+
+.cardTextContainer {
+  padding: 10px;
+}
+
+.cardTitle {
+  color: #000000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 0px;
+  text-decoration: none !important;
+}
+
+.cardParagraph {
+  color: #656565;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
