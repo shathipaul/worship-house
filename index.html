@@ -8,16 +8,64 @@
   </head>
   <body>
     <!--Header/ Navbar -->
+    <div class="bgPink mobileMediaButton">
+      <span>WorshipHouse Media</span>
+      <img
+        class="mobileNavMenu"
+        src="./assets/icons/Vector2.png"
+        alt="WorshipHouse Logo"
+      />
+    </div>
     <header class="header">
       <div>
-        <div class="header-first-section">
+        <!-- For mobile -->
+        <div class="displayNoneDesktop">
+          <div class="mobileNavContainer">
+            <a href="/" aria-label="back to home">
+              <img
+                class="mobileNavMenu"
+                src="./assets/icons/menu.png"
+                alt="WorshipHouse Logo"
+            /></a>
+            <a href="/" aria-label="back to home">
+              <img
+                class="brand-logo"
+                src="./assets/Brand-logo.png"
+                alt="WorshipHouse Logo"
+            /></a>
+            <div class="header-icons-section">
+              <a href="">
+                <img src="./assets/icons/User.svg" alt="User profile" />
+              </a>
+              <a href="" class="cart-container">
+                <img src="./assets/icons/Cart.png" alt="Cart" />
+                <span class="cart-count">1</span>
+              </a>
+            </div>
+          </div>
+          <form class="input-field">
+            <div class="input-container">
+              <div class="input-field-icon">
+                <img src="./assets/icons/Search.svg" alt="Search icon" />
+              </div>
+              <input
+                type="search"
+                id="header-search"
+                placeholder="Find kids videos"
+                required
+              />
+            </div>
+          </form>
+        </div>
+
+        <!-- For desktop -->
+        <div class="header-first-section displayNoneMobile">
           <a href="/" aria-label="back to home">
             <img
               class="brand-logo"
               src="./assets/Brand-logo.png"
               alt="WorshipHouse Logo"
           /></a>
-
           <form class="input-field">
             <div class="input-container">
               <div class="input-field-icon">
@@ -55,7 +103,7 @@
               <li><a href="">On Sale</a></li>
             </ul>
           </nav>
-          <button class="primary-btn worshipMediaButton">
+          <button class="primary-btn textWhite bgMiddleBlue">
             WorshipHouse Media
           </button>
         </div>
@@ -63,93 +111,103 @@
     </header>
     <!-- Banner Section -->
     <section>
-      <div class="carousel-background">
-        <div class="carousel-container">
-          <div class="carousel" id="carousel">
-            <img src="./assets/banner.png" alt="Slide 1" />
+      <div class="marginBottom">
+        <div class="carousel-background">
+          <div class="container carousel-container">
+            <div class="carousel-wrapper">
+              <div class="carousel" id="bannerCarousel">
+                <img src="./assets/banner.png" alt="Slide 1" />
+                <img src="./assets/banner.png" alt="Slide 2" />
+                <img src="./assets/banner.png" alt="Slide 3" />
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="navigation">
-        <button class="arrow left" id="prev">
-          <img src="./assets/preview.png" alt="" />
-        </button>
-        <button class="arrow right" id="next">
-          <img src="./assets/next.png" alt="" />
-        </button>
+        <div class="navigation">
+          <button class="arrow left" id="prev-bannerCarousel">
+            <img src="./assets/preview.png" alt="Previous" />
+          </button>
+          <button class="arrow right" id="next-bannerCarousel">
+            <img src="./assets/next.png" alt="Next" />
+          </button>
+        </div>
       </div>
     </section>
     <!-- Best Seller Section -->
     <section>
-      <h2 class="bestSellerHeading">Best Sellers</h2>
-      <div class="bestSellerTabsWrapper">
-        <div class="bestSellerTabsContainer">
-          <button class="bestSellerTabSelected bestSellerTabs">
-            All products
-          </button>
-          <button class="bestSellerTabs">Games</button>
-          <button class="bestSellerTabs">Kids videos</button>
-          <button class="bestSellerTabs">Countdowns</button>
-          <button class="bestSellerTabs">Motions</button>
-          <button class="bestSellerTabs">Still backgrounds</button>
-          <button class="bestSellerTabs">Curriculum</button>
+      <h2 class="headingTitle textFuchsiaPink">Best Sellers</h2>
+      <div class="">
+        <div class="bestSellerTabsWrapper">
+          <div class="bestSellerTabsContainer">
+            <button class="bestSellerTabs bgPink textWhite">
+              All products
+            </button>
+            <button class="bestSellerTabs bgSoftPink">Games</button>
+            <button class="bestSellerTabs bgSoftPink">Kids videos</button>
+            <button class="bestSellerTabs bgSoftPink">Countdowns</button>
+            <button class="bestSellerTabs bgSoftPink">Motions</button>
+            <button class="bestSellerTabs bgSoftPink">Still backgrounds</button>
+            <button class="bestSellerTabs bgSoftPink">Curriculum</button>
+          </div>
         </div>
       </div>
-      <div class="bestSellerCardsContainer">
-        <div class="bestSellerCards">
-          <img src="./assets/best-seller/frame-1.png" alt="" />
-          <div class="cardTextContainer">
-            <h4 class="cardTitle">Match It! Back To School Edition</h4>
-            <p class="cardParagraph">Children's Ministry Deals</p>
+      <div class="bgPink bestSellerCardsWrapper">
+        <div class="bestSellerCardsContainer container">
+          <div class="bestSellerCards">
+            <img src="./assets/best-seller/frame-1.png" alt="" />
+            <div class="cardTextContainer">
+              <h4 class="cardTitle">Match It! Back To School Edition</h4>
+              <p class="cardParagraph">Children's Ministry Deals</p>
+            </div>
           </div>
-        </div>
-        <div class="bestSellerCards">
-          <img src="./assets/best-seller/frame-2.png" alt="" />
-          <div class="cardTextContainer">
-            <h4 class="cardTitle">Match It! Back To School Edition</h4>
-            <p class="cardParagraph">Children's Ministry Deals</p>
+          <div class="bestSellerCards">
+            <img src="./assets/best-seller/frame-2.png" alt="" />
+            <div class="cardTextContainer">
+              <h4 class="cardTitle">Match It! Back To School Edition</h4>
+              <p class="cardParagraph">Children's Ministry Deals</p>
+            </div>
           </div>
-        </div>
-        <div class="bestSellerCards">
-          <img src="./assets/best-seller/frame-3.png" alt="" />
-          <div class="cardTextContainer">
-            <h4 class="cardTitle">Match It! Back To School Edition</h4>
-            <p class="cardParagraph">Children's Ministry Deals</p>
+          <div class="bestSellerCards">
+            <img src="./assets/best-seller/frame-3.png" alt="" />
+            <div class="cardTextContainer">
+              <h4 class="cardTitle">Match It! Back To School Edition</h4>
+              <p class="cardParagraph">Children's Ministry Deals</p>
+            </div>
           </div>
-        </div>
-        <div class="bestSellerCards">
-          <img src="./assets/best-seller/frame-4.png" alt="" />
-          <div class="cardTextContainer">
-            <h4 class="cardTitle">Match It! Back To School Edition</h4>
-            <p class="cardParagraph">Children's Ministry Deals</p>
+          <div class="bestSellerCards">
+            <img src="./assets/best-seller/frame-4.png" alt="" />
+            <div class="cardTextContainer">
+              <h4 class="cardTitle">Match It! Back To School Edition</h4>
+              <p class="cardParagraph">Children's Ministry Deals</p>
+            </div>
           </div>
-        </div>
-        <div class="bestSellerCards">
-          <img src="./assets/best-seller/frame-5.png" alt="" />
-          <div class="cardTextContainer">
-            <h4 class="cardTitle">Match It! Back To School Edition</h4>
-            <p class="cardParagraph">Children's Ministry Deals</p>
+          <div class="bestSellerCards">
+            <img src="./assets/best-seller/frame-5.png" alt="" />
+            <div class="cardTextContainer">
+              <h4 class="cardTitle">Match It! Back To School Edition</h4>
+              <p class="cardParagraph">Children's Ministry Deals</p>
+            </div>
           </div>
-        </div>
-        <div class="bestSellerCards">
-          <img src="./assets/best-seller/frame-6.png" alt="" />
-          <div class="cardTextContainer">
-            <h4 class="cardTitle">Match It! Back To School Edition</h4>
-            <p class="cardParagraph">Children's Ministry Deals</p>
+          <div class="bestSellerCards">
+            <img src="./assets/best-seller/frame-6.png" alt="" />
+            <div class="cardTextContainer">
+              <h4 class="cardTitle">Match It! Back To School Edition</h4>
+              <p class="cardParagraph">Children's Ministry Deals</p>
+            </div>
           </div>
-        </div>
-        <div class="bestSellerCards">
-          <img src="./assets/best-seller/frame-7.png" alt="" />
-          <div class="cardTextContainer">
-            <h4 class="cardTitle">Match It! Back To School Edition</h4>
-            <p class="cardParagraph">Children's Ministry Deals</p>
+          <div class="bestSellerCards">
+            <img src="./assets/best-seller/frame-7.png" alt="" />
+            <div class="cardTextContainer">
+              <h4 class="cardTitle">Match It! Back To School Edition</h4>
+              <p class="cardParagraph">Children's Ministry Deals</p>
+            </div>
           </div>
-        </div>
-        <div class="bestSellerCards">
-          <img src="./assets/best-seller/frame-8.png" alt="" />
-          <div class="cardTextContainer">
-            <h4 class="cardTitle">Match It! Back To School Edition</h4>
-            <p class="cardParagraph">Children's Ministry Deals</p>
+          <div class="bestSellerCards">
+            <img src="./assets/best-seller/frame-8.png" alt="" />
+            <div class="cardTextContainer">
+              <h4 class="cardTitle">Match It! Back To School Edition</h4>
+              <p class="cardParagraph">Children's Ministry Deals</p>
+            </div>
           </div>
         </div>
       </div>
@@ -159,27 +217,29 @@
       <div class="lunchboxFirstContainer">
         <div class="marqueeContainer">
           <div class="marquee">
-            <div class="container">
+            <div class="lunchBoxLabelContainer">
               <span class="decorationBox"></span>
               <span class="playForFreeTxt">Play for Free</span>
             </div>
-            <div class="container">
+            <div class="lunchBoxLabelContainer">
               <span class="decorationBox"></span>
               <span class="playForFreeTxt">Play for Free</span>
             </div>
-            <div class="container">
+            <div class="lunchBoxLabelContainer">
               <span class="decorationBox"></span>
               <span class="playForFreeTxt">Play for Free</span>
             </div>
-            <div class="container">
+
+            <!-- Duplicated Content -->
+            <div class="lunchBoxLabelContainer">
               <span class="decorationBox"></span>
               <span class="playForFreeTxt">Play for Free</span>
             </div>
-            <div class="container">
+            <div class="lunchBoxLabelContainer">
               <span class="decorationBox"></span>
               <span class="playForFreeTxt">Play for Free</span>
             </div>
-            <div class="container">
+            <div class="lunchBoxLabelContainer">
               <span class="decorationBox"></span>
               <span class="playForFreeTxt">Play for Free</span>
             </div>
@@ -191,14 +251,16 @@
           <img src="./assets/lunchbox.png" alt="Lunchbox Suffle" />
         </div>
         <div class="lunchboxTxtBox">
-          <h2 class="lunchboxTitle">Lunchbox Shuffle</h2>
+          <h3 class="lunchboxTitle">Lunchbox Shuffle</h3>
           <span class="luchchboxSubTitle">Children's Ministry Deals</span>
           <p class="lunchboxTxt">
             This game video will challenge kids to keep track of specific lunch
             boxes as they are shuffled around on the screen. Whoever gets the
             most right, wins!
           </p>
-          <button class="primary-btn lunchboxButton">Play Now</button>
+          <button class="primary-btn bgPink textWhite lunchboxButton">
+            Play Now
+          </button>
         </div>
       </div>
       <span class="lunchboxSquareDeco"></span>
@@ -227,7 +289,11 @@
                 />
               </div>
             </form>
-            <button class="primary-btn freeStuffPlayButton">Play now</button>
+            <button
+              class="primary-btn textWhite bgDarkBlue freeStuffPlayButton"
+            >
+              Play now
+            </button>
           </div>
           <div class="freeStuffImageContainer">
             <img
@@ -235,6 +301,83 @@
               src="./assets/free-stuff.png"
               alt="Free stuff section image"
             />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- The Latest Section -->
+    <section>
+      <h2 class="headingTitle textBlue">The latest</h2>
+      <div class="">
+        <div class="bestSellerTabsWrapper">
+          <div class="bestSellerTabsContainer">
+            <button class="bestSellerTabs bgSoftBlue">All products</button>
+            <button class="bestSellerTabs bgDarkBlue textWhite">Games</button>
+            <button class="bestSellerTabs bgSoftBlue">Kids videos</button>
+            <button class="bestSellerTabs bgSoftBlue">Countdowns</button>
+            <button class="bestSellerTabs bgSoftBlue">Motions</button>
+            <button class="bestSellerTabs bgSoftBlue">Still backgrounds</button>
+            <button class="bestSellerTabs bgSoftBlue">Curriculum</button>
+          </div>
+        </div>
+      </div>
+      <div class="bgDarkBlue bestSellerCardsWrapper">
+        <div class="bestSellerCardsContainer container">
+          <div class="bestSellerCards">
+            <img src="./assets/latest/frame-1.png" alt="" />
+            <div class="cardTextContainer">
+              <h4 class="cardTitle">Match It! Back To School Edition</h4>
+              <p class="cardParagraph">Children's Ministry Deals</p>
+            </div>
+          </div>
+          <div class="bestSellerCards">
+            <img src="./assets/latest/frame-2.png" alt="" />
+            <div class="cardTextContainer">
+              <h4 class="cardTitle">Match It! Back To School Edition</h4>
+              <p class="cardParagraph">Children's Ministry Deals</p>
+            </div>
+          </div>
+          <div class="bestSellerCards">
+            <img src="./assets/latest/frame-3.png" alt="" />
+            <div class="cardTextContainer">
+              <h4 class="cardTitle">Match It! Back To School Edition</h4>
+              <p class="cardParagraph">Children's Ministry Deals</p>
+            </div>
+          </div>
+          <div class="bestSellerCards">
+            <img src="./assets/latest/frame-4.png" alt="" />
+            <div class="cardTextContainer">
+              <h4 class="cardTitle">Match It! Back To School Edition</h4>
+              <p class="cardParagraph">Children's Ministry Deals</p>
+            </div>
+          </div>
+          <div class="bestSellerCards">
+            <img src="./assets/latest/frame-5.png" alt="" />
+            <div class="cardTextContainer">
+              <h4 class="cardTitle">Match It! Back To School Edition</h4>
+              <p class="cardParagraph">Children's Ministry Deals</p>
+            </div>
+          </div>
+          <div class="bestSellerCards">
+            <img src="./assets/latest/frame-6.png" alt="" />
+            <div class="cardTextContainer">
+              <h4 class="cardTitle">Match It! Back To School Edition</h4>
+              <p class="cardParagraph">Children's Ministry Deals</p>
+            </div>
+          </div>
+          <div class="bestSellerCards">
+            <img src="./assets/latest/frame-7.png" alt="" />
+            <div class="cardTextContainer">
+              <h4 class="cardTitle">Match It! Back To School Edition</h4>
+              <p class="cardParagraph">Children's Ministry Deals</p>
+            </div>
+          </div>
+          <div class="bestSellerCards">
+            <img src="./assets/latest/frame-8.png" alt="" />
+            <div class="cardTextContainer">
+              <h4 class="cardTitle">Match It! Back To School Edition</h4>
+              <p class="cardParagraph">Children's Ministry Deals</p>
+            </div>
           </div>
         </div>
       </div>
@@ -254,14 +397,272 @@
               lunch boxes as they are shuffled around on the screen. Whoever
               gets the most right, wins!
             </p>
-            <button class="primary-btn cosmicPowerPlayButton">Play now</button>
+            <button class="primary-btn textWhite bgPink cosmicPowerPlayButton">
+              Play now
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Featured Games Section -->
+    <section>
+      <div class="featureWrapper">
+        <h2 class="headingTitle textBlue">Featured games</h2>
+        <div class="featuredContainer">
+          <button class="arrow-button" id="prev-1">
+            <img src="./assets/preview.png" alt="Previous" />
+          </button>
+
+          <div class="featuresImageContainer">
+            <div class="featureCarousel">
+              <img src="./assets/feature/frame-1.png" alt="Game 1" />
+              <img src="./assets/feature/frame-2.png" alt="Game 2" />
+              <img src="./assets/feature/frame-3.png" alt="Game 3" />
+              <img src="./assets/feature/frame-3.png" alt="Game 4" />
+              <img src="./assets/feature/frame-4.png" alt="Game 5" />
+            </div>
+          </div>
+
+          <button class="arrow-button" id="next-1">
+            <img src="./assets/next.png" alt="Next" />
+          </button>
+
+          <div class="featureBg"></div>
+        </div>
+      </div>
+    </section>
+    <!-- Testimonial Section -->
+    <section>
+      <div class="testimonial-wrapper">
+        <h2 class="headingTitle textFuchsiaPink">What they say about us</h2>
+        <div class="testimonial-container">
+          <div class="testimonialCardContainer">
+            <div class="testimonialCard bgNavyBlue">
+              <div class="testimonialContent">
+                <div class="testmonialImageContainer">
+                  <img src="./assets/icons/coma.svg" alt="" />
+                </div>
+                <h3 class="testimonialTitle">Darlene Robertson</h3>
+                <p class="testimonialParagraph">
+                  Adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore magna aliqua. Ut enim ad minim veniam.
+                </p>
+              </div>
+            </div>
+            <div class="testimonialCard bgPink">
+              <div class="testimonialContent">
+                <div class="testmonialImageContainer">
+                  <img src="./assets/icons/coma.svg" alt="" />
+                </div>
+                <h3 class="testimonialTitle">Darlene Robertson</h3>
+                <p class="testimonialParagraph">
+                  Adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore magna aliqua. Ut enim ad minim veniam.
+                </p>
+              </div>
+            </div>
+            <div class="testimonialCard bgBlue">
+              <div class="testimonialContent">
+                <div class="testmonialImageContainer">
+                  <img src="./assets/icons/coma.svg" alt="" />
+                </div>
+                <h3 class="testimonialTitle">Darlene Robertson</h3>
+                <p class="testimonialParagraph">
+                  Adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore magna aliqua. Ut enim ad minim veniam.
+                </p>
+              </div>
+            </div>
+            <div class="testimonialCard bgOrange">
+              <div class="testimonialContent">
+                <div class="testmonialImageContainer">
+                  <img src="./assets/icons/coma.svg" alt="" />
+                </div>
+                <h3 class="testimonialTitle">Darlene Robertson</h3>
+                <p class="testimonialParagraph">
+                  Adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore magna aliqua. Ut enim ad minim veniam.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- New Products Section -->
+    <section>
+      <div class="newProductsWrapper">
+        <h2 class="headingTitle textBlue">New Products</h2>
+
+        <div class="newProductsContainer">
+          <button class="arrow-button" id="prev-productCarousel">
+            <img src="./assets/preview.png" alt="Previous" />
+          </button>
+
+          <div class="newProductsCardContainer" id="productCarousel">
+            <div class="newProductCards">
+              <img src="./assets/new-products/frame-1.png" alt="Product 1" />
+              <div class="newProductsTextContainer">
+                <div>
+                  <h4 class="cardTitle">Match It! Back To School Edition</h4>
+                  <p class="cardParagraph">Children's Ministry Deals</p>
+                </div>
+                <div class="cardPriceContainer displayNoneMobile">
+                  <p class="cardTitle">$10.00</p>
+                  <p class="cardPrice">$20.00</p>
+                </div>
+              </div>
+            </div>
+            <div class="newProductCards">
+              <img src="./assets/new-products/frame-2.png" alt="Product 2" />
+              <div class="newProductsTextContainer">
+                <div>
+                  <h4 class="cardTitle">Match It! Back To School Edition</h4>
+                  <p class="cardParagraph">Children's Ministry Deals</p>
+                </div>
+                <div class="cardPriceContainer displayNoneMobile">
+                  <p class="cardTitle">$10.00</p>
+                  <p class="cardPrice">$20.00</p>
+                </div>
+              </div>
+            </div>
+            <div class="newProductCards">
+              <img src="./assets/new-products/frame-3.png" alt="Product 3" />
+              <div class="newProductsTextContainer">
+                <div>
+                  <h4 class="cardTitle">Match It! Back To School Edition</h4>
+                  <p class="cardParagraph">Children's Ministry Deals</p>
+                </div>
+                <div class="cardPriceContainer displayNoneMobile">
+                  <p class="cardTitle">$10.00</p>
+                  <p class="cardPrice">$20.00</p>
+                </div>
+              </div>
+            </div>
+            <div class="newProductCards">
+              <img src="./assets/new-products/frame-4.png" alt="Product 4" />
+              <div class="newProductsTextContainer">
+                <div>
+                  <h4 class="cardTitle">Match It! Back To School Edition</h4>
+                  <p class="cardParagraph">Children's Ministry Deals</p>
+                </div>
+                <div class="cardPriceContainer displayNoneMobile">
+                  <p class="cardTitle">$10.00</p>
+                  <p class="cardPrice">$20.00</p>
+                </div>
+              </div>
+            </div>
+            <div class="newProductCards">
+              <img src="./assets/new-products/frame-1.png" alt="Product 1" />
+              <div class="newProductsTextContainer">
+                <div>
+                  <h4 class="cardTitle">Match It! Back To School Edition</h4>
+                  <p class="cardParagraph">Children's Ministry Deals</p>
+                </div>
+                <div class="cardPriceContainer displayNoneMobile">
+                  <p class="cardTitle">$10.00</p>
+                  <p class="cardPrice">$20.00</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button class="arrow-button" id="next-productCarousel">
+            <img src="./assets/next.png" alt="Next" />
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- Blog Section -->
+    <section>
+      <div class="bgPink blogWrapper">
+        <div class="blogContainer">
+          <div class="blogLeftContainer">
+            <h3 class="blogLeftTitle">Latest from Worshiphouse Kids Blog!</h3>
+            <p class="blogLeftParagraph">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <div class="blogLeftButtonContainer">
+              <button class="textFuchsiaPink bgWhite primary-btn">
+                Show All
+              </button>
+              <button class="textWhite bgSoftPink primary-btn">
+                Uncategorized
+              </button>
+              <button class="textWhite bgSoftPink primary-btn">Easter</button>
+              <button class="textWhite bgSoftPink primary-btn">Seasonal</button>
+            </div>
+          </div>
+          <div class="blogRightContainer">
+            <div class="blogScroller">
+              <div class="blogRightCard bgBlue">
+                <div class="blogRightCardImage">
+                  <img src="./assets/blog/blog-1.png" alt="" />
+                </div>
+                <div class="blogRightCardContent">
+                  <p>June 7, 2024 | <span>By Mariah Tovar</span></p>
+                  <h3>
+                    6 Father's Day Motion Backgrounds for Your Sunday Service
+                  </h3>
+                  <p>
+                    Shift Worship has a vast amount of motion backgrounds that
+                    are perfect for adding that something special to your
+                    worship experiences. The best part? We have media that you
+                    can use for every occasion.
+                  </p>
+                  <button class="blogRightCardButton">
+                    Road More <img src="./assets/icons/Vector.png" alt="" />
+                  </button>
+                </div>
+              </div>
+              <div class="blogRightCard bgBlue">
+                <div class="blogRightCardImage">
+                  <img src="./assets/blog/blog-2.png" alt="" />
+                </div>
+                <div class="blogRightCardContent">
+                  <p>April 11, 2024 | <span>By Mariah Tovar</span></p>
+                  <h3>Custom Mother's Day Backgrounds with Shift Worship</h3>
+                  <p>
+                    Using motion graphics in your Mother’s Day service is great
+                    for celebrating the amazing mothers (and mother figures) in
+                    the community, highlighting strong pillars in the church,
+                    and setting examples...
+                  </p>
+                  <button class="blogRightCardButton">
+                    Road More <img src="./assets/icons/Vector.png" alt="" />
+                  </button>
+                </div>
+              </div>
+              <div class="blogRightCard bgBlue">
+                <div class="blogRightCardImage">
+                  <img src="./assets/blog/blog-3.png" alt="" />
+                </div>
+                <div class="blogRightCardContent">
+                  <p>April 11, 2024 | <span>By Mariah Tovar</span></p>
+                  <h3>Top Resurrection Media</h3>
+                  <p>
+                    Shift Worship has a vast amount of motion backgrounds that
+                    are perfect for adding that something special to your
+                    worship experiences. The best part? We have media that you
+                    can use for every occasion.
+                  </p>
+                  <button class="blogRightCardButton">
+                    Road More <img src="./assets/icons/Vector.png" alt="" />
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
     <!-- Footer Section  -->
     <section class="footerBg">
-      <div class="footerContainer">
+      <div class="container footerContainer">
         <div class="footerFirstSection">
           <div class="footerAboutUs">
             <a href="/">
@@ -327,7 +728,7 @@
             <li><a href=""></a>California — CCPA Notice</li>
           </ul>
           <div class="footerNewsletter">
-            <h2 class="footerNewsletterHeading">Subscribe to our newsletter</h2>
+            <h3 class="footerNewsletterHeading">Subscribe to our newsletter</h3>
             <p class="footerNewsletterSubheading">
               Enter your email and we'll send you KidMin ideas, special offers,
               and FREE children's video downloads throughout the month.
@@ -343,7 +744,7 @@
                   required
                 />
               </div>
-              <button class="primary-btn subscribeButton">Subscribe</button>
+              <button class="primary-btn textWhite bgPink">Subscribe</button>
             </form>
           </div>
         </div>
@@ -356,6 +757,8 @@
       <div class="footerTriangleDeco"></div>
     </section>
     <!-- JavaScript -->
-    <script src="script.js"></script>
+    <script src="bannerCarousel.js"></script>
+    <script src="productCarousel.js"></script>
+    <script src="featureCarousel.js"></script>
   </body>
 </html>
